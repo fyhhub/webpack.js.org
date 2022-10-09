@@ -18,9 +18,13 @@ contributors:
   - bigdawggi
   - anshumanv
   - textbook
+<<<<<<< HEAD
 translators:
   - dear-lizhihua
   - QC-L
+=======
+  - coly010
+>>>>>>> df2ab787d5f7406a789b4cdb4d1db1f593567fc8
 ---
 
 webpack 开箱即用，可以无需使用任何配置文件。然而，webpack 会假定项目的入口起点为 `src/index.js`，然后会在 `dist/main.js` 输出结果，并且在生产环境开启压缩和优化。
@@ -59,6 +63,7 @@ W> Notice that many array configurations allow to reference the default value vi
 const path = require('path');
 
 module.exports = {
+  name: "my-config", // name of the configuration, shown in output
   <mode "/configuration/mode">
     <default>
       mode: "production", // "production" | "development" | "none"
@@ -181,8 +186,6 @@ module.exports = {
     },
     uniqueName: "my-application", // (defaults to package.json "name")
     // unique name for this build to avoid conflicts with other builds in the same HTML
-    name: "my-config",
-    // name of the configuration, shown in output
     <advancedOutput "#">
       <default>
         /* 高级输出配置（点击显示） */
