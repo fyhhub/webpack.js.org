@@ -61,7 +61,18 @@ module.exports = function (source) {
 };
 ```
 
+<<<<<<< HEAD
 ## Logger methods $#logger-methods$
+=======
+As you can see from the above `my-webpack-plugin.js` example, there're two types of logging methods,
+
+1. `compilation.getLogger`
+2. `compiler.getInfrastructureLogger`
+
+It's advised to use `compilation.getLogger` when plugin/logging is related to the compilation, and they will be stored within the stats. For logging that happens outside the compilation cycle, use `compiler.getInfrastructureLogger` instead.
+
+## Logger methods
+>>>>>>> 08470791d1c6aaf0239f3997c6d8986d98cccf7c
 
 - `logger.error(...)`：用于输出错误信息
 - `logger.warn(...)`：用于输出警告信息
