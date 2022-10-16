@@ -147,9 +147,16 @@ module.exports = {
 
 为 CommonJS 启用 [魔法注释](/api/module-methods/#magic-comments)。
 
+<<<<<<< HEAD
 - 类型：`boolean`
 - 可用版本：5.17.0+
 - 示例：
+=======
+- Type: `boolean`
+- Available: 5.17.0+
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -172,9 +179,16 @@ const x = require(/* webpackIgnore: true */ 'x');
 
 指定动态导入的全局模式。
 
+<<<<<<< HEAD
 - 类型：`'eager' | 'weak' | 'lazy' | 'lazy-once'`
 - 可用版本：5.73.0+
 - 示例：
+=======
+- Type: `'eager' | 'weak' | 'lazy' | 'lazy-once'`
+- Available: 5.73.0+
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -191,9 +205,16 @@ const x = require(/* webpackIgnore: true */ 'x');
 
 指定动态导入的全局 prefetch。
 
+<<<<<<< HEAD
 - 类型：` number | boolean`
 - 可用版本：5.73.0+
 - 示例：
+=======
+- Type: ` number | boolean`
+- Available: 5.73.0+
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -210,9 +231,16 @@ const x = require(/* webpackIgnore: true */ 'x');
 
 指定动态导入的全局 preload。
 
+<<<<<<< HEAD
 - 类型：` number | boolean`
 - 可用版本：5.73.0+
 - 示例：
+=======
+- Type: ` number | boolean`
+- Available: 5.73.0+
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -229,9 +257,16 @@ const x = require(/* webpackIgnore: true */ 'x');
 
 指出在 `\"import ... from ...\"` 与 `\"export ... from ...\"` 中无效导出名称的行为。
 
+<<<<<<< HEAD
 - 类型：`'error' | 'warn' | 'auto' | false`
 - 可用版本：5.62.0+
 - 示例：
+=======
+- Type: `'error' | 'warn' | 'auto' | false`
+- Available: 5.62.0+
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -248,9 +283,16 @@ const x = require(/* webpackIgnore: true */ 'x');
 
 指出在 `\"import ... from ...\"` 中无效导出名称的行为。
 
+<<<<<<< HEAD
 - 类型：`'error' | 'warn' | 'auto' | false`
 - 可用版本：5.62.0+
 - 示例：
+=======
+- Type: `'error' | 'warn' | 'auto' | false`
+- Available: 5.62.0+
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -267,9 +309,16 @@ const x = require(/* webpackIgnore: true */ 'x');
 
 Enable or disable evaluating `import.meta`.
 
+<<<<<<< HEAD
 - 类型：`boolean = true`
 - 可用版本：5.68.0+
 - 示例：
+=======
+- Type: `boolean = true`
+- Available: 5.68.0+
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -286,9 +335,16 @@ Enable or disable evaluating `import.meta`.
 
 启用/禁用 [`import.meta.webpackContext`](/api/module-variables/#importmetawebpackcontext) 分析。
 
+<<<<<<< HEAD
 - 类型：`boolean`
 - 可用版本：5.70.0+
 - 示例：
+=======
+- Type: `boolean`
+- Available: 5.70.0+
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -305,9 +361,16 @@ Enable or disable evaluating `import.meta`.
 
 指出在  `\"export ... from ...\"` 中无效导出名称的行为。当在 TypeScript 重新导出类型，从 `\"export ... from ...\"` 迁移到 `\"export type ... from ...\"` 时禁用该配置项是有用的。
 
+<<<<<<< HEAD
 - 类型：`'error' | 'warn' | 'auto' | false`
 - 可用版本：5.62.0+
 - 示例：
+=======
+- Type: `'error' | 'warn' | 'auto' | false`
+- Available: 5.62.0+
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -324,8 +387,14 @@ Enable or disable evaluating `import.meta`.
 
 启用 `new URL()` 语法解析。
 
+<<<<<<< HEAD
 - 类型：`boolean = true` | `'relative'`
 - 示例:
+=======
+- Type: `boolean = true` | `'relative'`
+- Example:
+
+>>>>>>> 63bb67f5d8389e9c1038db9b4aaed93a3333cada
   ```js
   module.exports = {
     module: {
@@ -340,12 +409,12 @@ Enable or disable evaluating `import.meta`.
 
 自 webpack <Badge text='5.23.0' /> 起，`module.parser.javascript.url` 的 `'relative'` 值可用。当使用 `'relative'` 时，webpack 将为 `new URL()` 语法生成相对的 URL，即结果 URL 中不包含根 URL：
 
-```
+```html
 <!-- with 'relative' -->
-<img src='c43188443804f1b1f534.svg' />
+<img src="c43188443804f1b1f534.svg" />
 
 <!-- without 'relative' -->
-<img src='file:///path/to/project/dist/c43188443804f1b1f534.svg' />
+<img src="file:///path/to/project/dist/c43188443804f1b1f534.svg" />
 ```
 
 1. 当服务器不知道根 URL 时，这对 SSR（服务端渲染）很有用（而且可用节省一些字节）。为了使其相同，它也必须用于客户端构建。
