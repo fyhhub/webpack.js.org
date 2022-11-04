@@ -747,4 +747,4 @@ module.exports = function (source) {
 
 - Loaders 最好使用 `this.getLogger()` 进行日志记录，这是指向 `compilation.getLogger()` 具有 loader 路径和已处理的文件。这种日志记录被存储到 Stats 中并相应地格式化。它可以被 webpack 用户过滤和导出。
 - Loaders 可以使用 `this.getLogger('name')` 获取具有子名称的独立记录器。仍会添加 loader 路径和已处理的文件。
-- Loaders 可以使用特殊的回退逻辑来检测日志支持 `this.getLogger() ? this.getLogger() : console`。在使用不支持 `getLogger` 方法的旧 webpack 版本时提供回退方法。
+- Loaders 可以使用特殊的回退逻辑来检测日志支持 `this.getLogger ? this.getLogger() : console`。在使用不支持 `getLogger` 方法的旧 webpack 版本时提供回退方法。
